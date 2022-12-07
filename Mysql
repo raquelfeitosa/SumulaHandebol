@@ -1,0 +1,27 @@
+create table advertencias(id_advertencias int auto_increment
+nome_jogador varchar(20),
+time_ varchar(20) ,
+tempo time ,
+desclassificacao varchar(20) ,
+advertencias varchar(20) ,
+id_partida int,
+primary key(id_advertencias)
+);
+
+create table Cadastro(id_cadastro  int auto_increment,
+competicao varchar(20),
+numero_do_jogo int, 
+categoria varchar(20),
+sexo varchar(20), 
+Time_A varchar(20), 
+Time_B varchar(20),
+id_partida int,
+primary key(id_cadastro)
+);
+
+create table diretor(id_diretor int auto_increment,
+Nome varchar(30), 
+Idade int(11), 
+Nacionalidade varchar(20),
+primary key(id_diretor)
+);
