@@ -25,3 +25,30 @@ Idade int(11),
 Nacionalidade varchar(20),
 primary key(id_diretor)
 );
+
+create table gols(
+id_gols int auto_increment,
+nome_jogador varchar(30),
+time_ varchar(20),
+tempo time,
+gols varchar(20), 
+id_partida int(11),
+Primary Key(id_gols)
+);
+
+create table time_partida(
+id_time_fk int, 
+id_partida_fk int);
+
+Create table partida(
+id_partida int auto_increment,
+resultado varchar(20), 
+Arbitro1 varchar(30), 
+Arbitro2 varchar(30), 
+cronometrista varchar(20), 
+delegado varchar(20), 
+data_ date ,
+inicio time ,
+termino time,
+Primary Key(id_partida)
+);
