@@ -55,3 +55,20 @@ inicio time ,
 termino time,
 Primary Key(id_partida)
 );
+
+create table jogador (id_jogador int auto_increment,
+nome varchar(20),
+Camisa int,
+idade int,
+Nacionalidade varchar(20), 
+telefone int,
+Primary key(id_jogador)
+);
+
+create table jogador_advertencias(
+id_jogador_fk int,
+id_advertencias_fk int);
+
+create table jogador_partida(
+id_jogador_fk int,
+id_partida_fk int);
